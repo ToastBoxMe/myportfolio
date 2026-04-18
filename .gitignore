@@ -1,0 +1,21 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if ever added)
+node_modules/
+
+# Local build scratch
+*.b64
+build/
+dist/
+.cache/
