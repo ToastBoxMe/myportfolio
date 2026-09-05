@@ -1,74 +1,47 @@
-# Glenn Marten — Portfolio
+# Personal Portfolio Site
 
-Personal portfolio site for **Glenn Marten (鍾岷錥)** — Computer Science graduate, n8n automation developer, Mandarin-certified (TOCFL B1, NTNU). Based in Jakarta.
+A lightweight, single-page portfolio built with HTML, CSS, and JavaScript. The site has no build step and can be deployed directly to a static hosting provider.
 
-> Single-file HTML with local portfolio media. No build step.
-
----
-
-## Deploy to GitHub Pages (free hosting)
-
-1. **Create a new GitHub repository**
-   - Go to [github.com/new](https://github.com/new)
-   - Name it `glenn-marten.github.io` (if you want it at your root URL) **or** any repo name (it'll live at `username.github.io/reponame/`)
-   - Set it to **Public**
-   - Do not initialize with a README (we already have one)
-
-2. **Upload the files**
-   - On the empty repo page, click **"uploading an existing file"**
-   - Drag `index.html`, `README.md`, and `.gitignore` in
-   - Commit directly to `main`
-
-3. **Enable GitHub Pages**
-   - Go to repo **Settings → Pages**
-   - Under "Build and deployment", set Source to **Deploy from a branch**
-   - Branch: `main` · Folder: `/ (root)` · Save
-   - Wait 1–2 minutes for first deploy
-
-4. **Visit your site**
-   - `https://<username>.github.io/` (if repo is `<username>.github.io`)
-   - `https://<username>.github.io/<reponame>/` (any other repo name)
-
-## Alternative deploys (also free)
-
-| Host        | How                                                        | URL pattern                |
-|-------------|------------------------------------------------------------|----------------------------|
-| Netlify     | Drag the folder to [app.netlify.com/drop](https://app.netlify.com/drop) | `xxx.netlify.app`          |
-| Vercel      | `npx vercel` inside the folder                             | `xxx.vercel.app`           |
-| Cloudflare  | Connect the GitHub repo at [pages.cloudflare.com](https://pages.cloudflare.com) | `xxx.pages.dev`            |
+> Single-file HTML with local portfolio media.
 
 ---
+
+## Deploy to GitHub Pages
+
+1. Create a public GitHub repository.
+2. Upload `index.html`, `README.md`, `.gitignore`, and the `media/` folder.
+3. Open **Settings → Pages**.
+4. Set the source to **Deploy from a branch**, select `main`, and choose `/ (root)`.
+5. Open the GitHub Pages URL after deployment finishes.
 
 ## Local preview
 
-Just double-click `index.html` to open in a browser. Or serve it:
+Open `index.html` directly in a browser, or run:
 
 ```bash
-# Python 3
 python -m http.server 8000
-# then open http://localhost:8000
 ```
+
+Then visit `http://localhost:8000`.
 
 ---
 
 ## Editing
 
-All content and styles live in a single `index.html` file. Sections are clearly commented:
+The content and styles live in `index.html`. Main sections are clearly commented:
 
 - `<!-- HERO -->`
 - `<!-- ABOUT -->`
-- `<!-- PROJECTS -->` — contains Monita, Trixie, and Threads & Instagram Affiliate Content Automation
+- `<!-- PROJECTS -->`
 - `<!-- SKILLS -->`
 - `<!-- EXPERIENCE -->`
 - `<!-- LANGUAGES -->`
 - `<!-- CONTACT -->`
 
-The original project screenshots are embedded as `data:image/jpeg;base64,...` inline. New social-content visuals live in `media/` so they can be updated without editing the page structure.
+Local project visuals are stored in `media/`. Update the image `src` paths and descriptive `alt` text when replacing them. Remove account handles, private links, and other identifying information before publishing screenshots.
 
----
+Before deployment, replace the sample identity, project descriptions, links, and contact details in `index.html` with the site owner's information.
 
-## Contact
+## Optional hosting
 
-- Email · martenglenn@gmail.com
-- LinkedIn · [linkedin.com/in/glenn-marten](https://linkedin.com/in/glenn-marten)
-- Phone · +62 813-1657-9309
+The same files can also be deployed through Netlify, Vercel, or Cloudflare Pages.
