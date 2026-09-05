@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Glenn Marten (鍾岷錥)** — Computer Science graduate, n8n automation developer, Mandarin-certified (TOCFL B1, NTNU). Based in Jakarta.
 
-> Single-file HTML. All assets (photo + screenshots) embedded as base64. No build step.
+> Single-file HTML with local portfolio media. No build step.
 
 ---
 
@@ -57,13 +57,13 @@ All content and styles live in a single `index.html` file. Sections are clearly 
 
 - `<!-- HERO -->`
 - `<!-- ABOUT -->`
-- `<!-- PROJECTS -->` — contains Monita, Trixie, and Invoice Automation
+- `<!-- PROJECTS -->` — contains Monita, Trixie, and Threads & Instagram Affiliate Content Automation
 - `<!-- SKILLS -->`
 - `<!-- EXPERIENCE -->`
 - `<!-- LANGUAGES -->`
 - `<!-- CONTACT -->`
 
-Images are embedded as `data:image/jpeg;base64,...` inline. To replace an image, encode the new file and swap the base64 string.
+The original project screenshots are embedded as `data:image/jpeg;base64,...` inline. New social-content visuals live in `media/` so they can be updated without editing the page structure.
 
 ---
 
